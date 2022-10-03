@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app1
+  template:
+    metadata:
+      labels:
+        app: app1
+    spec:
+      containers:
+      - name: app1
+        image: alpine:3.10
+        tty: true
+        stdin: true
+        env:
+          - name: foo
+            value: bar
+        resources:
+          limits:
+            memory: "64Mi"
+            cpu: "100m"
