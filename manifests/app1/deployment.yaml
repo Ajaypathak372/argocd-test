@@ -22,5 +22,5 @@ spec:
             value: bar
         resources:
           limits:
-            memory: "64Mi"
+            memory: "70Mi"
             cpu: "100m"
