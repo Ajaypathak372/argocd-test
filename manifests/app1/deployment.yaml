@@ -25,6 +25,4 @@ spec:
             memory: "72Mi"
             cpu: "100m"
       - name: app12
-        image: alpine
-        tty: true
-        stdin: true
+        image: httpd
