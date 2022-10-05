@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app2
-        image: alpine:3.10
+        image: alpine:3.15.6
         tty: true
         stdin: true
         env:
